@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-
+import {CtxConsumer} from '../index';
 class Footer extends Component{
     state = {
         name: 'sameer',
@@ -13,14 +13,23 @@ class Footer extends Component{
         this.setState({name: evt.target.value})
         console.log(this.state.name)
     }
+    
     render(){
+       // const animals = ['cat','dog','horse'];
         return(
-            <div>
-                <h2 onClick={this.props.myalert}>
-                    {this.props.trademark}
-                </h2>
-                <input value={this.state.name} onChange={this.changed} type="text"/>
-            </div>
+            <CtxConsumer>
+                {(context) =>(
+                    <div>
+                        { context.animals.map( animal =>{
+                            return(
+                                <div key={animal}>
+                                    <h1>{animal}</h1>
+                                    </div>
+                            );
+                        })}
+                    </div>
+                )}
+            </CtxConsumer>
         )
     }
 }

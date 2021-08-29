@@ -2,15 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="710f9434-89ed-496e-87e5-8fd0b23c4344" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/third/first-app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/third/first-app/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/third/first-app/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/third/first-app/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/third/first-app/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/third/first-app/public/logo192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/third/first-app/public/logo512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/third/first-app/public/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/third/first-app/public/robots.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/third/first-app/src/App.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/third/first-app/src/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/third/first-app/src/App.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/third/first-app/src/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/third/first-app/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/third/first-app/src/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/third/first-app/src/reportWebVitals.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/third/first-app/src/setupTests.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/third/first-app/yarn.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/second/MovieRaterApi/api/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/second/MovieRaterApi/api/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/second/MovieRaterApi/api/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/second/MovieRaterApi/api/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/second/MovieRaterApi/api/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/second/MovieRaterApi/api/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/second/MovieRaterApi/api/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/second/MovieRaterApi/api/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/second/MovieRaterApi/api/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/second/MovieRaterApi/api/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/second/MovieRaterApi/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/second/MovieRaterApi/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/second/MovieRaterApi/movierater/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/second/MovieRaterApi/movierater/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/second/MovieRaterApi/movierater/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/second/MovieRaterApi/movierater/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +130,7 @@
       <updated>1629567762478</updated>
       <workItem from="1629567766808" duration="5805000" />
       <workItem from="1629961517655" duration="582000" />
-      <workItem from="1629962407280" duration="30520000" />
+      <workItem from="1629962407280" duration="32232000" />
     </task>
     <servers />
   </component>

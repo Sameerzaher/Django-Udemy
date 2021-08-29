@@ -2,25 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="710f9434-89ed-496e-87e5-8fd0b23c4344" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/third/first-app/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third/first-app/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third/first-app/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third/first-app/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third/first-app/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third/first-app/public/logo192.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third/first-app/public/logo512.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third/first-app/public/manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third/first-app/public/robots.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third/first-app/src/App.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third/first-app/src/App.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third/first-app/src/App.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third/first-app/src/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third/first-app/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third/first-app/src/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third/first-app/src/reportWebVitals.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third/first-app/src/setupTests.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third/first-app/yarn.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fourth /movie-rater/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/Fourth /movie-rater/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fourth /movie-rater/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/Fourth /movie-rater/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Second/MovieRaterApi/api/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Second/MovieRaterApi/api/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +115,7 @@
       <updated>1629567762478</updated>
       <workItem from="1629567766808" duration="5805000" />
       <workItem from="1629961517655" duration="582000" />
-      <workItem from="1629962407280" duration="32232000" />
+      <workItem from="1629962407280" duration="34354000" />
     </task>
     <servers />
   </component>
@@ -154,6 +139,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Django_Udemy$manage.coverage" NAME="manage Coverage Results" MODIFIED="1629572090280" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/first" />
-    <SUITE FILE_PATH="coverage/Django_Udemy$manage__1_.coverage" NAME="manage Coverage Results" MODIFIED="1630153578180" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/second/MovieRaterApi/movierater" />
+    <SUITE FILE_PATH="coverage/Django_Udemy$manage__1_.coverage" NAME="manage Coverage Results" MODIFIED="1630260704790" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/second/MovieRaterApi/movierater" />
   </component>
 </project>

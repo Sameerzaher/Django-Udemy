@@ -10,7 +10,7 @@ from .serializers import MovieSerializer, RatingSerializer, UserSerializer
 
 
 class UserViewSet(viewsets.ModelViewSet):
-    queryset = Movie.objects.all()
+    queryset = User.objects.all()
     serializer_class = UserSerializer
 
 

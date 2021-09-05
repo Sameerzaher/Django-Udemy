@@ -1,31 +1,80 @@
-import React ,{ useState,useEffect } from 'react';
-
+import React, {useState, useEffect, useContext} from 'react';
 import './App.css';
-function App() {
-  const [movies,setMovie] = useState([]);
+import MovieList from './components/movie-list';
+import MovieDetails from './components/movie-details';
+import MovieForm from './components/movie-form';
+import { useFetch } from "./hooks/hooks";
+import {TokenContext} from "./context";
+var FontAwesome = require('react-fontawesome');
+
+function App(props) {
+
+  const { token, removeToken } = useContext(TokenContext);
+  const [ moviesAPI, loadingMovies, errorMovies] = useFetch("loadMovies");
+  const [ movies, setMovies ] = useState();
+  const [ selectedMovie, setSelectedMovie ] = useState(null)
+  const [ editedMovie, setEditedMovie ] = useState(null)
+
   useEffect(()=>{
-    fetch("http://127.0.0.1:8000/api/movies/",{
-      method: 'GET',
-      headers: {
-        'Content-Type': 'application/json',
-        'Authorization': 'Token 56e23f29c7e8fe55412f71447346992f42ae13c1'
-      }
-    }).then(resp => resp.json())
-    .then(resp => setMovie(resp))
-    .catch(error=>console.log(error))
-  }, [])
-  return (
-    <div className="App">
-      <header className="App-header">
-        <h1>movie rater</h1>
-        <div className="layout">
-          <div>{movies.map(movie => {
-            return <h2>{movie.title}</h2>
-          })}</div>
-          <div>Movie details</div>
-        </div>
-      </header>
-    </div>
-  );
+    if(!token){
+      window.location.href = '/';
+    }
+  },[token])
+
+  useEffect(()=>{
+    setMovies(moviesAPI)
+  },[moviesAPI])
+
+  const logoutClicked = () => {
+    removeToken('mr-token');
+    window.location.href = '/';
+  }
+
+  const loadMovie = movie => {
+    setSelectedMovie(movie);
+    setEditedMovie(null);
+  }
+  const movieDeleted = selMovie => {
+    const newMovies = movies.filter( movie => movie.id !== selMovie.id);
+    setMovies(newMovies);
+    setSelectedMovie(null);
+  }
+  const editClicked = selMovie => {
+    setEditedMovie(selMovie);
+  }
+  const newMovie = () => {
+    setEditedMovie({title: '', description: ''});
+  }
+  const cancelForm = () => {
+    setEditedMovie(null);
+  }
+  const addMovie = movie => {
+    setMovies([...movies, movie]);
+  }
+
+  if(loadingMovies) return <h1>Loading...</h1>
+  if(errorMovies) return <h1>Error loading movies</h1>
+
+    return (
+      <div className="App">
+          <h1>
+            <FontAwesome name="film"/>
+            <span>Movie Rater</span>
+            <button onClick={logoutClicked}>Logout</button>
+          </h1>
+          <div className="layout">
+            <MovieList movies={movies} movieClicked={loadMovie} token={token}
+              movieDeleted={movieDeleted} editClicked={editClicked} newMovie={newMovie}/>
+            <div>
+              { !editedMovie ?
+                <MovieDetails movie={selectedMovie} updateMovie={loadMovie}  token={token}/>
+               : <MovieForm movie={editedMovie} cancelForm={cancelForm}
+               newMovie={addMovie} editedMovie={loadMovie} token={token}/> }
+            </div>
+            
+          </div>
+      </div>
+    );
 }
+
 export default App;

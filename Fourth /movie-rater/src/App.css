@@ -1,15 +1,39 @@
-.App {
-  min-height: 100vh;
+button {
+  color: #444444;
+  background-color: #f3f3f3;
+  padding: 5px 10px;
+  border-radius: 2px;
+  font-weight: bold;
+  font-size: 0.8em;
+  outline: none;
 }
-
-.App-header {
-  text-align: center;
-  background-color: #282c34;
-  font-size: calc(10px + 2vmin);
+button:disabled {
+  color: #f3f3f3;
+  background-color: #444444;
+  cursor: not-allowed;
+}
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  font-size: 0.8em;
+}
+h2 {
+  margin: 0;
+  font-size: 2em;
+}
+.fa-trash {
+  color: crimson;
+}
+h1 {
+  color: orange;
+  font-size: 3em;
+}
+h1 span.fa {
   color: white;
+  transform: rotate(30deg);
 }
-.layout {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
+.login-container {
+  width: 50%;
+  margin: 50px 25%;
 }
